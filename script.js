@@ -1,12 +1,11 @@
-/*
 //atv 1
 let numero = 1
-function calculo (){
-if (numero % 2 === 0) {
-    console.log ("É um numero par");
-} else {
-    console.log("É um numero impar");
-}
+function calculo() {
+    if (numero % 2 === 0) {
+        console.log("É um numero par");
+    } else {
+        console.log("É um numero impar");
+    }
 }
 calculo(numero)
 
@@ -14,34 +13,39 @@ calculo(numero)
 //atv 2
 let numeroum = 1
 let numerodois = 2
-function calcular (numeroum, numerodois){
-    console.log (numeroum+numerodois);
-    console.log(numeroum-numerodois);
-    console.log(numeroum*numerodois);
-    console.log(numeroum/numerodois);
+function calcular(numeroum, numerodois) {
+    console.log(numeroum + numerodois);
+    console.log(numeroum - numerodois);
+    console.log(numeroum * numerodois);
+    console.log(numeroum / numerodois);
 }
 calcular(numeroum, numerodois)
 
+
 //atv 3
 let count = 10;
-while (count>=1){
+while (count >= 1) {
     console.log(count)
     count--;
 }
+
+
 //atv 4
 let texto = prompt("Digite uma palavra");
-function inverterTexto(texto){
+function inverterTexto(texto) {
     console.log(texto.split("").reverse().join(""));
 }
 inverterTexto(texto)
 
+
 //atv 5
 let palavra = prompt("Digite uma palavra");
-function contarCaracteres(palavra){
+function contarCaracteres(palavra) {
     console.log(palavra.split(''));
-    for (i=0;i<palavra.length; i++);
+    for (io = 0; io < palavra.length; io++);
 }
 contarCaracteres(palavra)
+
 
 //atv 6
 let carro = {
@@ -58,77 +62,93 @@ carro.automovel();
 let apresentacao = {
     nome: prompt("Digite um nome"),
     mensagem: "Ola",
-apresentar:function(){
-    console.log(this.mensagem + " " + this.nome );
-}
+    apresentar: function () {
+        console.log(this.mensagem + " " + this.nome);
+    }
 };
 apresentacao.apresentar();
+
+
 //atv 8
-let n1 = prompt ("Digite um numero")*1;
-let n2 = prompt("Digite outro numero")*1;
-let n3 = prompt("Digite outro numero")*1;
-function media(n1, n2, n3){
-    console.log ((n1 + n2 + n3)/3)
+let n1 = prompt("Digite um numero") * 1;
+let n2 = prompt("Digite outro numero") * 1;
+let n3 = prompt("Digite outro numero") * 1;
+function media(n1, n2, n3) {
+    console.log((n1 + n2 + n3) / 3)
 };
 media(n1, n2, n3);
 
-//atv 9 
-let count = 20;
-while (count>=1){
-    if (multiplodetres)
-    console.log ()
+
+//atv 9
+for (let i = 0; i <= 20; i++) {
+    if (i % 3 === 0) {
+        console.log(i, "Multiplo de 3");
+    }
+    else {
+        console.log(i, "Não múltiplo de 3");
+    }
 }
+
 
 //atv 10
-verificarPalindromo = prompt("Digite uma palavra")
-{
-return x == String(x).split("").reverse().join("")
-};
-
-//atv 11
-let numero = prompt ("Digite um numero");
-function verificarSinal(numero){
-    if (numero === 0){
-    console.log("Numero é zero");
-    } 
-    if  (numero < 1){
-    console.log("Numero negativo");
+let word = prompt("Digite uma palavra");
+function verificarPalindromo(word) {
+    y = word.split('').reverse().join('');
+    if (y === word) {
+        console.log("É um palíndromo");
     }
-    else  {
-    console.log("Numero positivo");
+    else {
+        console.log("Não é um palíndrmo")
     }
 }
-verificarSinal(numero)
+verificarPalindromo(word)
+
+
+//atv 11
+let nnumero = prompt("Digite um número:")
+function verificarSinal(nnumero){
+    if (nnumero === 0){
+        console.log("Zero");
+    }if (nnumero > 0){
+        console.log("Positivo");
+    } else {
+        console.log("Negativo");
+    }
+}
+verificarSinal(nnumero)
+
 
 //atv 12
 let temperatura = prompt("Digite uma temperatura em Celcius");
-function converterTemperatura(temperatura){
-console.log((temperatura * 9/5) + 32)
+function converterTemperatura(temperatura) {
+    console.log((temperatura * 9 / 5) + 32)
 }
 converterTemperatura(temperatura)
 
+
 //atv 13
-let count = 100;
-let soma = (soma + count);
-function soma(count){
-while (count>=1){
-    console.log(soma)
+let i = 1;
+let somaa = 0;
+while (i <= 100) {
+    somaa += i;
+    i++;
 }
-}
-soma(count)
+console.log(somaa);
+
 
 //atv 14
-let palavra = prompt("Digite uma cor");
-function Substituirpalavra (palavra){
-    if (palavra==="Vermelho"){
-        console.log ("Azul");
+let palav = prompt("Digite uma cor");
+function Substituirpalavra(palav) {
+    if (palav === "Vermelho") {
+        console.log("Azul");
     }
     else {
-        console.log ("Vermelho");
+        console.log("Vermelho");
     }
 }
-Substituirpalavra (palavra)
-*/
+Substituirpalavra(palav)
+
+
 //atv 15
 let tamanho = prompt("Digite uma palavra")
 function verificarTamanho(tamanho) {
@@ -141,75 +161,94 @@ function verificarTamanho(tamanho) {
 }
 verificarTamanho(tamanho)
 
-//atv 16
 
-//atv 17 
-let apresentacao = {
+//atv  16
+let frutas = ["Maça", "Banana", "Abacaxi", "Uva", "Limao"]
+console.log(frutas[3]);
+
+
+//atv  17
+let apresentacaoo = {
     nome: prompt("Digite um nome"),
-    mensagem: "Bem vindo a",
+    saudacao: "Bem vindo o(a)",
     apresentar: function () {
-        console.log(this.mensagem + " " + this.nome);
+        console.log(this.saudacao + " " + this.nome);
     }
 };
-apresentacao.apresentar();
+apresentacaoo.apresentar();
 
-//atv  18 
-let nota = prompt("Digite a nota")
-function verificarnota(nota) {
-    if (nota > 6) {
+
+//atv  18
+let nota = prompt("Digite sua nota:")
+function verificarAprovacao(nota){
+    if (nota >= 6){
         console.log("Aprovado")
-    }
-    if (nota < 6) {
+    } else {
         console.log("Reprovado")
     }
 }
-verificarnota(nota)
+verificarAprovacao(nota)
 
-/*
-//atv  19
-let count = 30;
-while (count>=1){
-    if (numero % 2 === 0) {
-        console.log (numero);}
-    else {
-        console.log()}
+
+//atv 19
+for (let i = 0; i <= 30; i++) {
+    if (i % 2 === 0) {
+        console.log(i);
     }
-count(numero)
-*/
+}
 
-//atv 20 
-let palavra = prompt ("Digite uma palavra:");
 
-function contarvogais (Palavra){
-
+//atv 20
+let palavraa = prompt("Digite uma palavra:");
+function contarvogais(palavraa) {
     const Vogais = "aeiouAEIOU"
     let contador = 0
-
-        for (let letra of palavra){
-            if (Vogais.includes(letra)){
-                contador++;
-            }
+    for (let letra of palavraa) {
+        if (Vogais.includes(letra)) {
+            contador++;
         }
-        console.log(contador);
     }
-    contarvogais(palavra)
+    console.log(contador);
+}
+contarvogais(palavraa)
+
 
 //atv 21
+let array = [10, 20, 30, 40, 50];
+console.log(array[0] + array[1] + array[2] + array[3] + array[4])
+
+
 //atv 22
-let numeroo = prompt("Digite um numero")
-function dobrarNumero (numeroo){
-    console.log(parseInt(numeroo)+parseInt(numeroo))
+let num = prompt("Digite um numero")
+function dobrarNumero(num) {
+    console.log(parseInt(num) + parseInt(num))
 }
-dobrarNumero (numeroo)
+dobrarNumero(num)
+
+
 //atv 23
-//atv 24
-let p = prompt ("Digite uma palavra")
-function pMaiuscula (p){
-    console.log()
+for (let i = 2; i <= 20; i++) {
+    if (i % 2 === 0) {
+        console.log(i);
+    }
 }
-//atv 25 
+
+
+//atv 24
+let maiuscula = prompt("Digite a palavra:")
+function capitalizar(maiuscula) {
+    console.log(maiuscula.charAt(0).toUpperCase() + maiuscula.slice(1));
+}
+capitalizar(maiuscula)
+
+
+//atv 25
 let ano = prompt("Digite um ano");
-function verificarano(ano){
-console.log(ano + 32)
+function verificarano(ano) {
+    if (ano % 4 === 0)
+        console.log("O ano é bissexto")
+    else {
+        console.log("O ano não é bissexto")
+    }
 }
 verificarano(ano)
